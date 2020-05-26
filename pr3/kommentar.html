@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        background: rgb(55, 55, 55);
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-    </style>
+    <title>Omnia Homepage</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Kommentar</h1>
-    <a href="index.html"><button>Home</button></a>
-    <a href="download.html"><button>Download</button></a>
-    <a href="impressum.html"><button>Impressum</button></a>
-    <a href="kommentar.html"><button>Kommentar</button></a>
-
-    <form
+    <header>
+      <nav>
+        <ul>
+          <li class="logo"><a href="index.html">Omni Logo</a></li>
+          <li><a href="download.html">Download</a></li>
+          <li><a href="kommentar.html">Kommentar</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+        </ul>
+      </nav>
+      <h1>Kommentar</h1>
+    </header>
+    <section>
+      <form
       method="GET"
       action="http://schorsch.efi.fh-nuernberg.de/cgi/test-comment"
       enctype="text/plain"
@@ -44,5 +43,8 @@
         <input type ="reset"value ="Löschen">
       </p>
     </form>
+    </section>
+    <section>lower-section</section>
+    <footer>footer</footer>
   </body>
 </html>
