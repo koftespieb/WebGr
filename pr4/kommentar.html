@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Omnia Homepage</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="logo"><a href="index.html">Omni Logo</a></li>
+          <li><a href="download.html">Download</a></li>
+          <li><a href="kommentar.html">Kommentar</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+        </ul>
+      </nav>
+      <h1>Kommentar</h1>
+    </header>
+    <section>
+      <form
+      method="GET"
+      action="http://schorsch.efi.fh-nuernberg.de/cgi/test-comment"
+      enctype="text/plain"
+    >
+      <p>
+        Vorname:<input name="Vorname" type="text" /><br />
+        Nachname:<input name="Nachname" type="text" /><br />
+        E-Mail: <input name="email" type="text" />
+      </p>
+      <p>
+        Nachricht:<br />
+        <textarea name="nachricht" rows="6" cols="30"></textarea>
+      </p>
+      <p>
+        Wichtigkeit:<select name = "wichtigkeit">
+          <option>Irrelevant</option>
+          <option>Wichtig</option>
+          <option>Megawichtig</option>
+        </select>
+      </p>
+        <input type ="submit"value="Absenden">
+        <input type ="reset"value ="Löschen">
+      </p>
+    </form>
+    </section>
+    <section>lower-section</section>
+    <footer>footer</footer>
+  </body>
+</html>
