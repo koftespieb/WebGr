@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Aquire";
+  src: url("fonts/AquireBold-8Ma60.otf") format("opentype");
+}
+.aquire {
+  font-family: "Aquire";
+}
+/* Sets link Color in Header when hover over it*/
+a:hover {
+  color: rgb(74, 169, 210);
+}
+body {
+  background: rgb(37, 37, 37);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+body .app img {
+  height: 400px;
+}
+header {
+  background-color: rgb(37, 37, 37);
+  /*padding: 20px;*/
+  height: 220px;
+  text-align: center;
+}
+header .mobile {
+  display: none;
+}
+header a {
+  color: rgb(196, 196, 196);
+  text-decoration: none;
+  margin-top: 100px;
+}
+header .logo a {
+  background-image: url("bilder/logo_white.png");
+  background-size: 210px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 80px;
+  text-indent: -99999px;
+  width: 210px;
+  top: -45px;
+  position: relative;
+}
+/* Responsive Rules*/
+@media screen and (max-width: 680px) {
+  header {
+    padding-top: 40px;
+  }
+  header .mobile {
+    display: inline-block;
+  }
+  header .desktop {
+    display: none;
+  }
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+li {
+  display: inline;
+  margin-right: 20px;
+}
+section {
+  background: rgb(196, 196, 196);
+  color: rgb(37, 37, 37);
+  padding: 20px;
+  text-align: center;
+}
+footer {
+  background: rgb(37, 37, 37);
+  padding: 70px 20px;
+  text-align: center;
+}
+footer li {
+  padding: 100px;
+}
